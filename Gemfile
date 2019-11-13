@@ -21,6 +21,7 @@ gem "flipper-ui", "~> 0.16"
 gem "mailgun-ruby", "~> 1.1"
 gem "pg", "~> 1.1.0"
 gem "puma", "~> 3.7"
+gem 'react-rails'
 gem "uglifier", "~> 4.1"
 gem "webpacker", "~> 3.5"
 
@@ -39,6 +40,7 @@ group :development, :test do
   gem "rails-erd"
   gem "rspec-rails"
   gem "rubocop"
+  gem 'rubocop-performance'
   gem "rubocop-rspec"
   gem "selenium-webdriver"
   gem "shoulda-matchers"
