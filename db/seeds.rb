@@ -9,3 +9,11 @@ Dir[File.dirname(__FILE__) + "/seeds/*.rb"].each { |file| require file }
   puts "done" unless Rails.env.test?
 end
 # rubocop:enable Rails/Output
+fruits = %w(Mango Pineapple Passionfruit Dragonfruit)
+
+fruits.each do |fruit|
+  Fruit.create(
+    name: fruit,
+    description: "I am a citrus-y #{fruit}."
+    )
+end
